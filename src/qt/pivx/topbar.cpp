@@ -95,6 +95,10 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonMasternodes->setButtonText("masternode.conf");
     ui->pushButtonMasternodes->setChecked(false);
 
+	ui->pushButtonConsole->setButtonClassStyle("cssClass", "btn-check-console");
+    ui->pushButtonConsole->setButtonText("Debug Console");
+    ui->pushButtonConsole->setChecked(false);
+
     ui->pushButtonColdStaking->setButtonClassStyle("cssClass", "btn-check-cold-staking-inactive");
     ui->pushButtonColdStaking->setButtonText(tr("Cold Staking Disabled"));
     ui->pushButtonColdStaking->setVisible(false);
