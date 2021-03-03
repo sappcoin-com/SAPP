@@ -171,8 +171,8 @@ QPushButton[cssClass="btn-check-console"] {
     qproperty-icon: url("://ic-check-console") ;
     qproperty-iconSize: 24px 24px;
     color:#ffffff;
-    background-color:#0b2c42;
-    border-bottom:2px solid #43b3ff;
+    background-color:#505c4b7d;
+    border-bottom:2px solid #5C4B7D;
     border-radius:2px;
 }
 

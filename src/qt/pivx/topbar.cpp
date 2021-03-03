@@ -143,6 +143,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_HoverLeave, this, &TopBar::refreshProgressBarSize);
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_Hover, this, &TopBar::refreshProgressBarSize);
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_Pressed, [this](){window->goToSettingsInfo();});
+	connect(ui->pushButtonConsole, &ExpandableButton::Mouse_Pressed, [this](){window->goToDebugConsole();});
     connect(ui->pushButtonConnection, &ExpandableButton::Mouse_Pressed, [this](){window->showPeers();});
 }
 
