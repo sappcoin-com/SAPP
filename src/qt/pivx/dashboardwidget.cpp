@@ -687,7 +687,7 @@ void DashboardWidget::onChartRefreshed()
 
     // Total
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
-    if (chartData->totalPiv > 0 || chartData->totalMNRewards ) {
+    if (chartData->totalPiv > 0 || chartData->totalMNRewards > 0) {
         setCssProperty(ui->labelAmountPiv, "text-stake-piv");
         setCssProperty(ui->labelAmountMNRewards, "text-stake-mnrewards");
     } else {
