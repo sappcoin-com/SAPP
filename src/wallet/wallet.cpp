@@ -3583,8 +3583,6 @@ void CWallet::AutoCombineDust(CConnman* connman)
 
 bool CWallet::MultiSend()
 {
-    return false;
-    /* disable multisend
     LOCK2(cs_main, cs_wallet);
     // Stop the old blocks from sending multisends
     const CBlockIndex* tip = chainActive.Tip();
@@ -3701,7 +3699,6 @@ bool CWallet::MultiSend()
     }
 
     return true;
-    */
 }
 
 std::string CWallet::GetWalletHelpString(bool showDebug)
